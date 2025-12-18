@@ -1,28 +1,28 @@
 ---
-sidebar_position: 0
+侧栏位置：0
 ---
 
-# Overview
+#概述
 
-:::tip
-Surfboard follow [Surge](https://nssurge.com/)'s profile format
+**小费
+冲浪板跟随[激增](https://nssurge.com/)的配置文件格式
 
-Surge's profile documentation can be viewed [here](https://manual.nssurge.com/)
+可以查看Surge的配置文件[在这里](https://manual.nssurge.com/)
 :::
 
-```ini
-#!MANAGED-CONFIG http://test.com/surfboard.conf interval=60 strict=true # subscribe profile url and auto update config
-[General]
-# Specify dns server used by application
-dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
+```INI
+#！MANAGED-CONFIG http://test.com/surfboard.conf间隔=60严格=true#订阅配置文件url和自动更新配置
+[概述]
+#指定应用程序使用的dns服务器
+dns-server=系统，8.8.8.8，8.8.4.4，9.9.9:9953
 
-# Specify doh server used by application
-doh-server = https://9.9.9.9/dns-query
+#指定应用程序使用的doh服务器
+doh-server=https://9.9.9.9/dns-query
 
-# Specify route rule and domain rule, matching traffic will not be redirected or rejected.
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.baidu.com //444
+#指定路由规则和域规则，匹配的流量不会被重定向或拒绝。
+skip-proxy=127.0。0.192.168.0.0/16，10.00.0/8，172.16.0.0/12，100.64.0.0/10，localhost，*.本地，www.百度。com//444
 
-# Test url used by url-test and manually node speed test. Redirect proxy will use this url.
+#url测试和手动节点速度测试使用的测试url.重定向代理将使用此url.
 proxy-test-url = http://www.gstatic.com/generate_204
 
 # Test url used by url-test and manually node speed test. Direct proxy will use this url.
